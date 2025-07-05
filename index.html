@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Knitted Hugs by Tanya</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css/styles.css">
+
+
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>Knitted Hugs by Tanya </b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Дорослі кардигани</a>
+    <a href="#" class="w3-bar-item w3-button">Дитячі кардиганчики</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+     КАРДИГАНИ <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Короткі</a>
+      <a href="#" class="w3-bar-item w3-button">Міді</a>
+      <a href="#" class="w3-bar-item w3-button">Довгі</a>
+
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Пояса</a>
+    <a href="#" class="w3-bar-item w3-button">Аксесуари</a>
+    <a href="#" class="w3-bar-item w3-button">Роботи над якими працюю</a>
+    <a href="#" class="w3-bar-item w3-button"></a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Контакти</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Про мене</a>
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding"></a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">Knitted Hugs by Tanya</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">КАРДИГАНИ</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="e-com-page/2.webp" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">Мої роботи</h1>
+      <h1 class="w3-hide-large w3-hide-medium">Мої роботи</h1>
+      <h1 class="w3-hide-small">Колекція  2025</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row warm-filter">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="e-com-page/3.webp" style="width:100%">
+        <p>Кардигани різних кольорів<br><b>Ціна: 2800</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="e-com-page/girl-3.webp" style="width:100%">
+        <p>Family look<br><b>Ціна: 3600</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="e-com-page/girl-7.webp" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Замовити зараз <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Кардиган кольору хакі<br><b>Ціна: 2800</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="e-com-page/girls.webp" style="width:100%">
+        <p>Дорослий + Дитячий<br><b> </b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="e-com-page/girl-6.webp" style="width:100%">
+        <p><br><b>Ціна: 2800
+        </b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="e-com-page/girls-5.webp" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Замовити зараз<i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Дитячий кардиган<br><b class="w3-text-red">Ціна: 1000</b></p>
+      </div>
+    </div>
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="e-com-page/girl.webp" style="width:100%">
+        <p>Vintage Skinny Jeans<br><b>Ціна: 1200</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="e-com-page/girls-1.webp" style="width:100%">
+        <p>Дитячий кардиган<br><b>Ціна: 1200</b></p>
+      </div>
+    </div>
+  </div>
+<section class="content content--highlight">
+  <div class="highlight__wrapper">
+    <div class="highlight__text">
+      <h2 class="type-medium"> Про мене</h2>
+      <p>Моя мета — творити красу не лише для себе, а й щоб підтримати тих, хто цього потребує. Саме тому я в’яжу светр у своєму улюбленому кольорі для себе — і водночас дарую такий самий светрик дитині безкоштовно.</p>
+    </div>
+    <div class="highlight__gallery">
+      <div class="highlight__img" style="background-image:url('./e-com-page/5.webp')"></div>
+      <div class="highlight__img" style="background-image:url('./e-com-page/9.webp')"></div>
+      <div class="highlight__img" style="background-image:url('./e-com-page/4.webp')"></div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="w3-light-grey w3-center" id="footer">
+  <div class="order-form-container">
+    <h4>Замовлення</h4>
+    <p>Заповніть форму, щоб зробити замовлення</p>
+
+    <form id="orderForm" class="order-form">
+      <!-- honeypot проти спаму -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <!-- Тема листа -->
+      <input type="hidden" name="_subject" value="Нове замовлення з сайту">
+
+      <!-- Вибір товару -->
+      <div>
+        <label for="product">Виберіть товар</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Оберіть продукт</option>
+          <option value="cardigan">В'язаний кардиган</option>
+          <option value="scarf">Пояс‑хустка</option>
+          <option value="hat">Шапка</option>
+        </select>
+      </div>
+
+      <!-- Кількість -->
+      <div>
+        <label for="quantity">Кількість</label>
+        <input
+          id="quantity"
+          type="number"
+          name="quantity"
+          min="1"
+          value="1"
+          required
+        >
+      </div>
+
+      <!-- Ім'я клієнта -->
+      <div>
+        <label for="customer_name">Ім'я</label>
+        <input
+          id="customer_name"
+          type="text"
+          name="customer_name"
+          placeholder="Ваше ім'я"
+          required
+        >
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="customer_email">Email</label>
+        <input
+          id="customer_email"
+          type="email"
+          name="customer_email"
+          placeholder="Ваш email"
+          required
+        >
+      </div>
+
+      <!-- Телефон -->
+      <div>
+        <label for="customer_phone">Телефон</label>
+        <input
+          id="customer_phone"
+          type="tel"
+          name="customer_phone"
+          placeholder="+38 (___) ___-____"
+          required
+        >
+      </div>
+
+      <!-- Адреса доставки -->
+      <div class="full-width">
+        <label for="address">Адреса доставки</label>
+        <input
+          id="address"
+          type="text"
+          name="address"
+          placeholder="Вулиця, будинок, кв."
+          required
+        >
+      </div>
+
+      <!-- Додаткові побажання -->
+      <div class="full-width">
+        <label for="notes">Додаткові побажання</label>
+        <textarea
+          id="notes"
+          name="notes"
+          placeholder="Колір, розмір тощо..."
+          rows="4"
+        ></textarea>
+      </div>
+
+      <!-- Кнопка відправки -->
+      <div class="full-width">
+        <button type="submit">Зробити замовлення</button>
+      </div>
+    </form>
+  </div>
+  <form id="orderForm" class="order-form">
+  <input type="hidden" name="_subject" value="Нове замовлення з сайту">
+  <input type="text" name="_gotcha" style="display:none">
+
+
+
+<!-- Повідомлення після відправки -->
+<div id="formMessage" style="display:none; color:green; font-weight:bold; padding-top:1rem;">
+  ✅ Дякуємо за замовлення! Я зв'яжуся  з вами найближчим часом.
+</div>
+  </footer>
+
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion
+function myAccFunc() {
+  const x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+<script>
+document.getElementById("orderForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // зупиняє звичайну відправку
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  fetch("https://formspree.io/f/xblyejzk", {
+    method: "POST",
+    body: data,
+    headers: {
+      Accept: "application/json"
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      form.reset();
+      form.style.display = "none";
+      document.getElementById("formMessage").style.display = "block";
+    } else {
+      alert("⚠️ Помилка. Спробуйте ще раз або напишіть нам напряму.");
+    }
+  })
+  .catch(() => {
+    alert("⚠️ Сервер недоступний. Перевірте з'єднання або напишіть у Instagram.");
+  });
+});
+</script>
+</body>
+</html>

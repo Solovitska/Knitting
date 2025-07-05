@@ -1,0 +1,136 @@
+:root {
+  --accent: #d60606;
+  --accent-light: #f28b8b;
+  --bg-form: #faf7f5;
+  --text: #333;
+  --border: #e0dcdc;
+  --radius: 0.75rem;
+  --transition: 0.25s ease-in-out;
+}
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+.order-form-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: var(--bg-form);
+  border: 2px solid var(--accent-light);
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: var(--text);
+}
+
+.order-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.order-form .full-width {
+  grid-column: 1 / -1;
+}
+
+.order-form label {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-size: 0.9rem;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0.5rem rgba(214, 6, 6, 0.2);
+}
+
+.order-form button {
+  padding: 0.85rem 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.order-form button:hover {
+  background: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+.order-form button:active {
+  transform: translateY(0);
+}
+.content--highlight {
+  padding: 4rem 2rem;
+  background: #f5d8d5;
+  color: #1a1a1a;
+}
+
+.highlight__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.highlight__text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.highlight__text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.highlight__gallery {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.highlight__img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease;
+}
+
+.highlight__img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 480px) {
+  .order-form-container {
+    padding: 1.5rem;
+  }
+  .order-form {
+    gap: 1rem;
+  }
+
+}
